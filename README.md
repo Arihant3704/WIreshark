@@ -11,6 +11,7 @@
 ## 3. Give the hexadecimal value for the two-byte Frame type field. What upper layer protocol does this correspond to?
 ### Ans:- IPV4 (0X0800)
 
-## 4. How many bytes from the very start of the Ethernet frame does the ASCII "G" in "GET" appear in the Ethernet frame?
-Net answer the following questions based on the contents of the Ethemet frame?
+<img width="1920" height="1080" alt="Screenshot from 2025-07-30 11-37-48" src="https://github.com/user-attachments/assets/34e7ac8b-13f5-40bd-a18b-21c15b91c5ed" />
+
+## 4. How many bytes from the very start of the Ethernet frame does the ASCII "G" in "GET" appear in the Ethernet frame? Net answer the following questions based on the contents of the Ethemet frame?
 ### Ans:- 47 byte  (54-56 byte)
