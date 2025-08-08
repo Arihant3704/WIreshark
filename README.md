@@ -54,3 +54,20 @@
 
 ### Ans:- See in image
 
+
+## 11  Find the 802.11 frame containing the SYN TCP segment for this first TCP session (that downloads alice.txt). What are three MAC address fields in the 802.11 frame? Which MAC address in this frame corresponds to the wireless host (give the hexadecimal representation of the MAC address for the host)? To the access point? To the first-hop router? What is the IP address of the wireless host sending this TCP segment? What is the destination IP address? Does this destination IP address correspond to the host, access point, first-hop router, or some other network-attached device? Explain.
+
+<img width="1850" height="665" alt="image" src="https://github.com/user -attachments/assets/5862fd5e-f8fa-42be-903a-7bafd3927496" />
+## Ans:- Source address: Cisco-Li_f4:eb:a8 (00:16:b6:f4:eb:a8)          Destination address: IntelCor_d1:b6:4f (00:13:02:d1:b6:4f)            BSS Id: Cisco-Li_f7:1d:51 (00:16:b6:f7:1d:51)
+ransmitter Address (TA): This is the MAC address of the device sending the frame, which in this case is the wireless host.
+Receiver Address (RA): This is the MAC address of the immediate recipient of the frame, which is typically the access point in an infrastructure network.
+Basic Service Set Identifier (BSSID): This is the MAC address that uniquely identifies the Basic Service Set (BSS), commonly associated with the MAC address of the access point. 
+
+
+## 12 Find the 802.11 frame containing the SYNACK segment for this TCP session. What are three MAC address fields in the 802.11 frame? Which MAC address in this frame corresponds to the host? To the access point? To the first-hop router? Does the sender MAC address in the frame correspond to the IP address of the device that sent the TCP segment encapsulated within this datagram? (Hint: review Figure 6.19 in the text if you are unsure of how to answer this question, or the corresponding part of the previous question. It’s particularly important that you understand this).
+
+## Ans:- 
+<img width="1850" height="665" alt="image" src="https://github.com/user-attachments/assets/65d14107-fa18-49b9-a82d-dec446ef391f" />
+<img width="1850" height="665" alt="image" src="https://github.com/user-attachments/assets/25e26754-352f-4584-98e2-634b9bf68d38" />
+
+
