@@ -1,0 +1,42 @@
+### Prerequisites
+
+Before you begin, make sure you have OpenSSL installed on your system. You can install it using your package manager. For example, on Ubuntu:
+
+
+sudo apt-get install libssl-dev
+
+
+### Explanation
+
+1. **Server Program:**
+    - Initializes OpenSSL and creates an SSL context.
+    - Loads the server's certificate and private key.
+    - Creates a TCP socket, binds it to a port, and listens for incoming connections.
+    - For each connection, it accepts the connection, creates a new SSL structure, and performs the SSL handshake.
+    - Reads a message from the client, prints it, and sends a response back.
+    - Shuts down the SSL connection and cleans up.
+
+2. **Client Program:**
+    - Initializes OpenSSL and creates an SSL context.
+    - Creates a TCP socket and connects to the server.
+    - Associates the socket with an SSL structure and performs the SSL handshake.
+    - Sends a message to the server and reads the server's response.
+    - Shuts down the SSL connection and cleans up.
+
+### Generating SSL Certificates
+
+To run this example, you'll need to generate a self-signed certificate and a private key for the server. You can do this using OpenSSL as follows:
+
+
+openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout server.key -out server.crt
+
+
+This command will generate `server.key` (the private key) and `server.crt` (the certificate), which are referenced in the server program.
+
+### Compiling and Running the Programs
+
+To compile the server and client programs, you can use the following commands:
+
+
+cc serverfile.c -lssl -lcrypto
+cc clientfile.c -lssl -lcrypto
